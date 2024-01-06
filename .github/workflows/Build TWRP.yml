@@ -57,6 +57,7 @@ jobs:
     - name: Clone device tree
       run: |
         git clone https://github.com/Positive205/infinix-x6831-tree.git -b ${{ env.BRANCH_NAME }} ./device/infinix/X6831
+        mkdir -p ./kernel/infinix/X6831
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
 
     - name: Set Swap Space
