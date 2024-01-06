@@ -10,8 +10,6 @@ DEVICE_PATH := device/infinix/X6831
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
@@ -50,8 +48,8 @@ TARGET_NO_BOOTLOADER := true
 TARGET_SCREEN_DENSITY := 480
 
 # Kernel - prebuilt
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_DTB):dtb.img
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
