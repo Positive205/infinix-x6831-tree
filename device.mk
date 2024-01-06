@@ -29,7 +29,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-mtkimpl.recovery
 
 PRODUCT_PACKAGES += \
-#    bootctrl.mt6768
      bootctrl \
      bootctrl.recovery \
      libmtk_bsg
